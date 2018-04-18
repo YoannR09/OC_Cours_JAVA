@@ -7,17 +7,15 @@ public class Ville {
    private String nomVille;
    private int nbreHabitants;
    private String nomPays;
+   private char categorie;
     
-    
- 
-    	   
-    	  public Ville(){
-    	    System.out.println("Création d'une ville !");          
-    	    nomVille = "Inconnu";
-    	    nomPays = "Inconnu";
-    	    nbreHabitants = 0;
-    	  
-    	  }
+          public Ville(){
+	    System.out.println("Création d'une ville !");          
+	    nomVille = "Inconnu";
+	    nomPays = "Inconnu";
+	    nbreHabitants = 0;
+	    this.setCategorie();
+	  }
     	 
     	  public Ville(String pNom, int pNbre, String pPays)
     	  {
@@ -25,6 +23,7 @@ public class Ville {
     	    nomVille = pNom;
     	    nomPays = pPays;
     	    nbreHabitants = pNbre;
+    	    this.setCategorie();
     	   
     	  }  
     	    
@@ -33,6 +32,10 @@ public class Ville {
     	    return nomVille;
     	  }
 
+    	  public char getCategorie()
+    	  {
+    	    return categorie;
+    	  } 
     	  //Retourne le nom du pays
     	  public String getNomPays()
     	  {
@@ -48,5 +51,31 @@ public class Ville {
     	  {
     	    nomVille = pNom;
     	  }
+    	  private void setCategorie() {
+    		  
+    		    int bornesSuperieures[] = {0, 1000, 10000, 100000, 500000, 1000000, 5000000, 10000000};
+    		    char categories[] = {'?', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'};
+    		    int i = 0;
+    		    while (i < bornesSuperieures.length && this.nbreHabitants > bornesSuperieures[i])
+    		      i++;
+
+    		    this.categorie = categories[i];
+    		  }
+    	  public String decrisToi(){
+    		    return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "+this.nbreHabitants+" habitant(s) => elle est donc de catégorie : "+this.categorie;
+    		  }
+
+    		  //Retourne une chaîne de caractères selon le résultat de la comparaison
+    		  public String comparer(Ville v1){
+    		    String str = new String();
+
+    		    if (v1.getNombreHabitants() > this.nbreHabitants)
+    		      str = v1.getNom()+" est une ville plus peuplée que "+this.nomVille;
+    		     
+    		    else
+    		      str = this.nomVille+" est une ville plus peuplée que "+v1.getNom();
+    		     
+    		    return str;
+    		  }
 }
 
