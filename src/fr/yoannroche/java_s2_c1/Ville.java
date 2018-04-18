@@ -3,11 +3,13 @@ package fr.yoannroche.java_s2_c1;
 
 public class Ville {
 
-	//Les variables et les constructeurs n'ont pas changé…
+   public static int nbreInstances = 0;
+   
    private String nomVille;
    private int nbreHabitants;
    private String nomPays;
    private char categorie;
+   private static int nbreInstancesBis = 0;
     
           public Ville(){
 	    System.out.println("Création d'une ville !");          
@@ -15,6 +17,8 @@ public class Ville {
 	    nomPays = "Inconnu";
 	    nbreHabitants = 0;
 	    this.setCategorie();
+	    nbreInstances++;
+	    nbreInstancesBis++;   
 	  }
     	 
     	  public Ville(String pNom, int pNbre, String pPays)
@@ -24,7 +28,8 @@ public class Ville {
     	    nomPays = pPays;
     	    nbreHabitants = pNbre;
     	    this.setCategorie();
-    	   
+    	    nbreInstances++;
+    	    nbreInstancesBis++;   
     	  }  
     	    
     	  //Retourne le nom de la ville
@@ -47,6 +52,10 @@ public class Ville {
     	  {
     	    return nbreHabitants;
     	  } 
+    	  public static int getNombreInstancesBis()
+    	  {
+    	    return nbreInstancesBis;
+    	  }  
     	  public void setNom(String pNom)
     	  {
     	    nomVille = pNom;
