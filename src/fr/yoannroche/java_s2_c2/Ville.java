@@ -17,8 +17,6 @@ public class Ville {
 		nomPays = "Inconnu";
 		nbreHabitants = 0;
 		monument = "Inconnu";
-		Capitale cap = new Capitale("Paris", 654987, "France", "la tour Eiffel");
-	    System.out.println("\n"+cap.decrisToi());
 	} 
 
 	//Retourne le nom de la ville

@@ -4,9 +4,9 @@ package fr.yoannroche.java_s2_c2;
 	 
 	 private String monument;
 	 
-	//Constructeur par défaut
+	//Constructeur par dï¿½faut
 	  public Capitale(){
-	    //Ce mot clé appelle le constructeur de la classe mère  
+	    //Ce mot clï¿½ appelle le constructeur de la classe mï¿½re  
 	    super();
 	    monument = "aucun";
 	  }
@@ -15,6 +15,8 @@ package fr.yoannroche.java_s2_c2;
 	  public Capitale(String nom, int hab, String pays, String monument){
 		super(nom, hab, pays);
 	    this.monument = monument;
+	    Capitale cap = new Capitale("Paris", 654987, "France", "la tour Eiffel");
+	    System.out.println("\n"+cap.decrisToi());
 	    
 	  }
 	  
@@ -31,7 +33,7 @@ package fr.yoannroche.java_s2_c2;
 	    return monument;
 	  } 
 
-	  //Définit le nom du monument
+	  //Dï¿½finit le nom du monument
 	  public void setMonument(String monument) {
 	    this.monument = monument;
 	  }   
