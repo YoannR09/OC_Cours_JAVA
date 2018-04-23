@@ -1,18 +1,24 @@
 package fr.yoannroche.java_s2_c9;
 
-	import java.util.LinkedList;
-	import java.util.List;
-	import java.util.ListIterator;
-	 
-	public class Main {
-	 
-	  public static void main(String[] args) {
-	    List l = new LinkedList();
-	    l.add(12);
-	    l.add("toto ! !");
-	    l.add(12.20f);
+import java.util.HashSet;
+import java.util.Iterator;
+ 
+public class Main { 
+  public static void main(String[] args) {         
+    HashSet hs = new HashSet();
+    hs.add("toto");
+    hs.add(12);
+    hs.add('d');
 
-	    for(int i = 0; i < l.size(); i++)
-	      System.out.println("Élément à l'index " + i + " = " + l.get(i));
-	  }
-	}
+    Iterator it = hs.iterator();
+    while(it.hasNext())
+      System.out.println(it.next());
+ 
+    System.out.println("\nParcours avec un tableau d'objet");
+    System.out.println("-----------------------------------");
+                
+    Object[] obj = hs.toArray();
+    for(Object o : obj)
+      System.out.println(o);                
+  }
+}
