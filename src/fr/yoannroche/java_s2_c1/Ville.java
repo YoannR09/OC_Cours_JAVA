@@ -12,7 +12,7 @@ public class Ville {
 	private static int nbreInstancesBis = 0;
 
 	public Ville(){
-		System.out.println("Création d'une ville !");          
+		System.out.println("Crï¿½ation d'une ville !");          
 		nomVille = "Inconnu";
 		nomPays = "Inconnu";
 		nbreHabitants = 0;
@@ -23,7 +23,7 @@ public class Ville {
 
 	public Ville(String pNom, int pNbre, String pPays)
 	{
-		System.out.println("Création d'une ville avec des paramètres !");
+		System.out.println("Crï¿½ation d'une ville avec des paramï¿½tres !");
 		nomVille = pNom;
 		nomPays = pPays;
 		nbreHabitants = pNbre;
@@ -71,18 +71,18 @@ public class Ville {
 		this.categorie = categories[i];
 	}
 	public String decrisToi(){
-		return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "+this.nbreHabitants+" habitant(s) => elle est donc de catégorie : "+this.categorie;
+		return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "+this.nbreHabitants+" habitant(s) => elle est donc de catï¿½gorie : "+this.categorie;
 	}
 
-	//Retourne une chaîne de caractères selon le résultat de la comparaison
+	//Retourne une chaï¿½ne de caractï¿½res selon le rï¿½sultat de la comparaison
 	public String comparer(Ville v1){
 		String str = new String();
 
 		if (v1.getNombreHabitants() > this.nbreHabitants)
-			str = v1.getNom()+" est une ville plus peuplée que "+this.nomVille;
+			str = v1.getNom()+" est une ville plus peuplï¿½e que "+this.nomVille;
 
 		else
-			str = this.nomVille+" est une ville plus peuplée que "+v1.getNom();
+			str = this.nomVille+" est une ville plus peuplï¿½e que "+v1.getNom();
 
 		return str;
 	}
@@ -91,19 +91,6 @@ public class Ville {
 	 * Le programme est lancer ici.
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		System.out.println("Ville.main(...)");
-		Ville v = new Ville();                
-		System.out.println("Le nombre d'instances de la classe Ville est : " + Ville.nbreInstances);
-		System.out.println("Le nombre d'instances de la classe Ville est : " + Ville.getNombreInstancesBis());
-
-		Ville v1 = new Ville("Marseille", 1236, "France");        
-		System.out.println("Le nombre d'instances de la classe Ville est : " + Ville.nbreInstances);
-		System.out.println("Le nombre d'instances de la classe Ville est : " + Ville.getNombreInstancesBis());
-
-		Ville v2 = new Ville("Rio", 321654, "Brésil");        
-		System.out.println("Le nombre d'instances de la classe Ville est : " + Ville.nbreInstances);
-		System.out.println("Le nombre d'instances de la classe Ville est : " + Ville.getNombreInstancesBis());
-	}
+	
 }
 
