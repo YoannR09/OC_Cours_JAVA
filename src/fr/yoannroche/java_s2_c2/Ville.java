@@ -1,6 +1,7 @@
 package fr.yoannroche.java_s2_c2;
 
 
+
 public class Ville {
 
 	public static int nbreInstances = 0;
@@ -18,6 +19,12 @@ public class Ville {
 		nbreHabitants = 0;
 		monument = "Inconnu";
 	} 
+	public Ville(String string, int i, String string2) {
+		// TODO Auto-generated constructor stub
+	}
+	public String toString(){
+		  return "\t"+this.nomVille+" est une ville de "+this.nomPays+", elle comporte : "+this.nbreHabitants+" => elle est donc de catégorie : "+this.categorie;
+		  }
 
 	//Retourne le nom de la ville
 	public String getNom()  {  
@@ -51,9 +58,5 @@ public class Ville {
 	public String decrisToi(){
 		return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "+this.nbreHabitants+" habitant(s) => elle est donc de catégorie : "+this.categorie;
 	}
-
-	public static void main(String[] args) {
-	}
-	
 }
 
