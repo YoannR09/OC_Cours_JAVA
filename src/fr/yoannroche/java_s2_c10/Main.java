@@ -1,11 +1,24 @@
 package fr.yoannroche.java_s2_c10;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main{
 
-public static void main(String[] args) {
-	  Solo<Integer> val = new Solo<Integer>(12);
-	  val.setValeur(12.2f);   
-	  //Ici, on essaie de mettre un nombre à virgule flottante à la place d'un entier        
+	public static void main(String[] args){
+		List<Voiture> listVoiture = new ArrayList<Voiture>();
+		listVoiture.add(new Voiture());
+
+		List<VoitureSansPermis> listVoitureSP = new ArrayList<VoitureSansPermis>();
+		listVoitureSP.add(new VoitureSansPermis());
+
+		Garage garage = new Garage();
+		garage.add(listVoiture);
+		System.out.println("--------------------------");
+		garage.add(listVoitureSP);		
 	}
+
+
 }
+
 
