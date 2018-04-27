@@ -1,39 +1,36 @@
 package fr.yoannroche.java_s2_c11_lesflux;
 
-//Package à importer afin d'utiliser l'objet File
-import java.io.File;
+//Packages à importer afin d'utiliser l'objet File
+import java.io.CharArrayReader;
+import java.io.CharArrayWriter;
+import java.io.IOException;
 
 public class Main {
 	public static void main(String[] args) {
-		//Création de l'objet File
-		File f = new File("test.txt");
-		System.out.println("Chemin absolu du fichier : " + f.getAbsolutePath());
-		System.out.println("Nom du fichier : " + f.getName());
-		System.out.println("Est-ce qu'il existe ? " + f.exists());
-		System.out.println("Est-ce un répertoire ? " + f.isDirectory());
-		System.out.println("Est-ce un fichier ? " + f.isFile());
+		CharArrayWriter caw = new CharArrayWriter();
+		CharArrayReader car;
 
-		System.out.println("Affichage des lecteurs à la racine du PC : ");
-		for(File file : f.listRoots())
-		{
-			System.out.println(file.getAbsolutePath());
-			try {
-				int i = 1;	
-				//On parcourt la liste des fichiers et répertoires
-				for(File nom : file.listFiles()){
-					//S'il s'agit d'un dossier, on ajoute un "/"
-					System.out.print("\t\t" + ((nom.isDirectory()) ? nom.getName()+"/" : nom.getName()));
+		try {
+			caw.write("Coucou les Zéros");
+			//Appel à la méthode toString de notre objet de manière tacite
+			System.out.println(caw);
 
-					if((i%4) == 0){
-						System.out.print("\n");
-					}
-					i++;
-				}
-				System.out.println("\n");
-			} catch (NullPointerException e) {
-				//L'instruction peut générer une NullPointerException
-				//s'il n'y a pas de sous-fichier !
-			}
-		}		
+			//caw.close() n'a aucun effet sur le flux
+			//Seul caw.reset() peut tout effacer
+			caw.close();
+
+			//On passe un tableau de caractères à l'objet qui va lire le tampon
+			car = new CharArrayReader(caw.toCharArray());
+			int i;
+			//On remet tous les caractères lus dans un String
+			String str = "";
+			while(( i = car.read()) != -1)
+				str += (char) i;
+
+			System.out.println(str);
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
