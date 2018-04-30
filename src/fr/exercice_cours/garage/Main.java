@@ -1,6 +1,10 @@
 package fr.exercice_cours.garage;
 
+import fr.exercice_cours.garage.vehicule.moteur.*;
 import fr.exercice_cours.garage.vehicule.Vehicule;
+import fr.exercice_cours.garage.vehicule.option.*;
+import fr.exercice_cours.garage.vehicule.*;
+
 
 public class Main {
 	public static void main(String[] args) {

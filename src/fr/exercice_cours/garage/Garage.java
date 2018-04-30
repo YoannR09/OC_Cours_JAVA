@@ -2,6 +2,8 @@ package fr.exercice_cours.garage;
 
 import java.util.ArrayList;
 
+import fr.exercice_cours.garage.vehicule.Vehicule;
+
 
 public class Garage {
 	public Garage() {
@@ -15,9 +17,10 @@ public class Garage {
 		{
 			System.out.println("Voiture" + al.get(i));
 		}
-		public String to String() {
-			System.out.println(this.nom + this.prix + this.option + this.marque);
-		}
+	}
+
+	public void addVoiture() {
+		
 	}
 
 

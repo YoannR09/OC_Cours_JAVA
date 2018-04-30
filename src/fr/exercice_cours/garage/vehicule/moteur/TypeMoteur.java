@@ -4,7 +4,8 @@ public enum TypeMoteur {
 	DIESEL("Moteur Diesel"),
 	ESSENCE("Moteur Essence"),
 	HYBRIDE("Moteur Hybride"),
-	ELECTRIQUE("Moteur Electrique");
+	ELECTRIQUE("Moteur Electrique"),
+	INCONNU("Moteur inconnu");
 
 	private String typeMoteur = "";
 
