@@ -1,10 +1,15 @@
 package fr.exercice_cours.garage.vehicule.option;
 
 public class VitreElectrique implements Option {
-	private double Prix;
-	private double monPrix;
-	public VitreElectrique () {
-
-	}
+	
+	 public String TypeOption()
+	    {
+	        return "VitreElectrique";
+	    }
+	     
+	    public double getPrix()
+	    {
+	        return 68.9;
+	    }
 
 }

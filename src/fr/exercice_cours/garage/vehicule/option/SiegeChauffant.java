@@ -1,10 +1,15 @@
 package fr.exercice_cours.garage.vehicule.option;
 
 public class SiegeChauffant implements Option {
-	private double Prix;
-	private double monPrix;
-	public SiegeChauffant() {
-
-	}
+	
+	 public String TypeOption()
+	    {
+	        return "Siège Chauffant";
+	    }
+	     
+	    public double getPrix()
+	    {
+	        return 562.9;
+	    }
 
 }

@@ -2,9 +2,13 @@ package fr.exercice_cours.garage.vehicule.option;
 
 public class BarreDeToit implements Option {
 
-	private double Prix;
-	private double monPrix;
-	public BarreDeToit() {
-
-	}
+	 public String TypeOption()
+	    {
+	        return "Barre de Toit";
+	    }
+	     
+	    public double getPrix()
+	    {
+	        return 124.3;
+	    }
 }

@@ -1,21 +1,30 @@
 package fr.exercice_cours.garage.vehicule.moteur;
 
-public class Moteur {
-	TypeMoteur type = TypeMoteur.INCONNU;
-	public String cylindre;
-	private int prix ;
+import java.io.Serializable;
+
+public class Moteur implements Serializable{
+	protected TypeMoteur type ;
+	protected String cylindre;
+	private Double prix ;
 	
 	public Moteur () {}
 	
-	public Moteur (TypeMoteur type , String cylindre , int prix) {
-		this.type = type;
+	public Moteur (String cylindre , Double prix) {
 		this.cylindre = cylindre ;
 		this.prix = prix;
 		
 	}
-	public String toString() {
-		return cylindre;
 		
+	public Double getPrix() {
+		return this.prix;
 	}
+	public TypeMoteur getType() {
+		return type ;
+	}
+	public String toString()
+    {
+        String str = "Moteur "+getType()+" "+this.cylindre;
+        return str;
+    }
 
 }
