@@ -1,6 +1,8 @@
 package fr.exercice_cours.garage.vehicule;
 
-public enum Marque {
+import java.io.Serializable;
+
+public enum Marque implements Serializable {
 	RENO("De la marque RENO"),
 	PIGEOT("De la marque PIGEOT"),
 	TROEN("De la marque TROEN");

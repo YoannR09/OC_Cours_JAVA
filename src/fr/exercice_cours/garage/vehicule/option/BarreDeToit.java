@@ -1,6 +1,8 @@
 package fr.exercice_cours.garage.vehicule.option;
 
-public class BarreDeToit implements Option {
+import java.io.Serializable;
+
+public class BarreDeToit implements Option, Serializable {
 
 	 public String TypeOption()
 	    {

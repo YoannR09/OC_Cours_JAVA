@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"fr.exercice_cours.garage"},{"l":"fr.exercice_cours.garage.vehicule"},{"l":"fr.exercice_cours.garage.vehicule.moteur"},{"l":"fr.exercice_cours.garage.vehicule.option"}]

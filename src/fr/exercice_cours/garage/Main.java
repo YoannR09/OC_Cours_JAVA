@@ -1,19 +1,37 @@
 package fr.exercice_cours.garage;
 
-import fr.exercice_cours.garage.vehicule.moteur.*;
+import fr.exercice_cours.garage.vehicule.A300B;
+import fr.exercice_cours.garage.vehicule.D4;
+import fr.exercice_cours.garage.vehicule.Lagouna;
 import fr.exercice_cours.garage.vehicule.Vehicule;
-import fr.exercice_cours.garage.vehicule.option.*;
-import fr.exercice_cours.garage.vehicule.*;
+import fr.exercice_cours.garage.vehicule.moteur.MoteurDiesel;
+import fr.exercice_cours.garage.vehicule.moteur.MoteurElectrique;
+import fr.exercice_cours.garage.vehicule.moteur.MoteurEssence;
+import fr.exercice_cours.garage.vehicule.moteur.MoteurHybride;
+import fr.exercice_cours.garage.vehicule.option.BarreDeToit;
+import fr.exercice_cours.garage.vehicule.option.Climatisation;
+import fr.exercice_cours.garage.vehicule.option.Gps;
+import fr.exercice_cours.garage.vehicule.option.SiegeChauffant;
+import fr.exercice_cours.garage.vehicule.option.VitreElectrique;
 
 
+/**
+ * L'application est lancée ici
+ * @author Yoann
+ *
+ */
 public class Main {
+	/**
+	 * Methode de lancement de l'application
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Garage garage = new Garage();   
 		System.out.println(garage);
 
 		Vehicule lag1 = new Lagouna();
 		lag1.setMoteur(new MoteurEssence("150 Chevaux", 10256d));
-		lag1.addOption(new GPS());
+		lag1.addOption(new Gps());
 		lag1.addOption(new SiegeChauffant());
 		lag1.addOption(new VitreElectrique());
 		garage.addVoiture(lag1);
@@ -29,7 +47,7 @@ public class Main {
 		d4_1.setMoteur(new MoteurDiesel("200 Hdi", 25684.80d));
 		d4_1.addOption(new BarreDeToit());
 		d4_1.addOption(new Climatisation());
-		d4_1.addOption(new GPS());
+		d4_1.addOption(new Gps());
 		garage.addVoiture(d4_1);   	 
 
 		Vehicule lag2 = new Lagouna();
@@ -47,7 +65,7 @@ public class Main {
 		d4_2.addOption(new SiegeChauffant());
 		d4_2.addOption(new BarreDeToit());
 		d4_2.addOption(new Climatisation());
-		d4_2.addOption(new GPS());
+		d4_2.addOption(new Gps());
 		d4_2.addOption(new VitreElectrique());
 		garage.addVoiture(d4_2);   			 
 	}

@@ -1,6 +1,8 @@
 package fr.exercice_cours.garage.vehicule.option;
 
-public class VitreElectrique implements Option {
+import java.io.Serializable;
+
+public class VitreElectrique implements Option, Serializable {
 	
 	 public String TypeOption()
 	    {

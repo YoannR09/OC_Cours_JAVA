@@ -1,15 +1,20 @@
 package fr.exercice_cours.garage.vehicule.option;
 
-public class Gps implements Option {
+import java.io.Serializable;
 
-	 public String TypeOption()
-	    {
-	        return "GPS";
-	    }
-	     
-	    public double getPrix()
-	    {
-	        return 230.2;
-	    }
+public class Gps implements Option, Serializable {
+
+	@Override
+	public double getPrix() {
+		// TODO Auto-generated method stub
+		return 230.2;
+	}
+
+	@Override
+	public String TypeOption() {
+		// TODO Auto-generated method stub
+		return "GPS";
+	}
+
+	
 }
-

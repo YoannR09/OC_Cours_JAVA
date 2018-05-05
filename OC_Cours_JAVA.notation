@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_J69AwE6kEeioM8xuSu0Qrg" type="PapyrusUMLClassDiagram" name="Garage" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_NZp8QE6kEeioM8xuSu0Qrg" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NaMu0E6kEeioM8xuSu0Qrg" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NaNV4E6kEeioM8xuSu0Qrg" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NaNV4U6kEeioM8xuSu0Qrg" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_NaUDkE6kEeioM8xuSu0Qrg" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_UH6kAE6kEeioM8xuSu0Qrg" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="OC_Cours_JAVA.uml#_UHr6gE6kEeioM8xuSu0Qrg"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UH6kAU6kEeioM8xuSu0Qrg"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_NaUDkU6kEeioM8xuSu0Qrg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_NaUDkk6kEeioM8xuSu0Qrg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_NaUDk06kEeioM8xuSu0Qrg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NaUDlE6kEeioM8xuSu0Qrg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_NaUqoE6kEeioM8xuSu0Qrg" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_NaUqoU6kEeioM8xuSu0Qrg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_NaUqok6kEeioM8xuSu0Qrg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_NaUqo06kEeioM8xuSu0Qrg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NaUqpE6kEeioM8xuSu0Qrg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_NaUqpU6kEeioM8xuSu0Qrg" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_NaUqpk6kEeioM8xuSu0Qrg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_NaUqp06kEeioM8xuSu0Qrg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_NaUqqE6kEeioM8xuSu0Qrg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NaUqqU6kEeioM8xuSu0Qrg"/>
+    </children>
+    <element xmi:type="uml:Class" href="OC_Cours_JAVA.uml#_NZSv4E6kEeioM8xuSu0Qrg"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NZp8QU6kEeioM8xuSu0Qrg" x="260" y="160"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_J69AwU6kEeioM8xuSu0Qrg" name="diagram_compatibility_version" stringValue="1.3.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_J69Awk6kEeioM8xuSu0Qrg"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_J69Aw06kEeioM8xuSu0Qrg" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Model" href="OC_Cours_JAVA.uml#_1Pbz8E6jEeioM8xuSu0Qrg"/>
+  </styles>
+  <element xmi:type="uml:Model" href="OC_Cours_JAVA.uml#_1Pbz8E6jEeioM8xuSu0Qrg"/>
+</notation:Diagram>

@@ -1,6 +1,8 @@
 package fr.exercice_cours.garage.vehicule.option;
 
-public class Climatisation implements Option {
+import java.io.Serializable;
+
+public class Climatisation implements Option, Serializable {
 	
 	 public String TypeOption()
 	    {
