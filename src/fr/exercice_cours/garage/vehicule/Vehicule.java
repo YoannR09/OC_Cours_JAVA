@@ -64,7 +64,6 @@ public abstract class Vehicule implements Serializable {
                 Total +=o.getPrix();
             }
         }
-        float Totaux = (float) getPrix() + Total;
         return str+listObject+"] d'une valeur totale de "+Total+"€ \n";
 			}
 		
