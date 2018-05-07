@@ -41,6 +41,7 @@ public class Garage implements Serializable {
 		
 	}
 
+
 	/*
 	 * Ajout de la voiture
 	 */
