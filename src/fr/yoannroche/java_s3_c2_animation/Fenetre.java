@@ -34,7 +34,7 @@ public class Fenetre extends JFrame {
     // Vous verrez qu'elle fonctionne très bien
     while (true) {
       // Si la coordonnée x est inférieure à 1, on avance
-      if (x < 1)
+      if (x < 20)
         backX = false;
       // Si la coordonnée x est supérieure à la taille du Panneau moins la taille du rond, on recule
       if (x > pan.getWidth() - 50)
@@ -44,6 +44,7 @@ public class Fenetre extends JFrame {
         backY = false;
       if (y > pan.getHeight() - 50)
         backY = true;
+    
 
       // Si on avance, on incrémente la coordonnée
       // backX est un booléen, donc !backX revient à écrire
