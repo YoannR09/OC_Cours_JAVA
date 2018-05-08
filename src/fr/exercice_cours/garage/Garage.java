@@ -18,7 +18,6 @@ import fr.exercice_cours.garage.vehicule.option.Option;
 
 public class Garage implements Serializable {
 
-	private static final String Total = null;
 	protected List<Vehicule> voitures = new LinkedList<Vehicule>();
 	private int Option;
 	private static String cheminFichier = "src/fr/exercice_cours/garage/List.txt";
@@ -71,7 +70,7 @@ public class Garage implements Serializable {
 		for (int i = 0; i < voitures.size(); i++) {
 			str += "\n ";
 			str += voitures.get(i).toString(); 
-			str += "> d'une valeur totale de " + voitures.get(i).getPrix()  + " €"   ;
+			
 		}
 		return str;
 	}

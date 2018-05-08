@@ -18,6 +18,7 @@ public abstract class Vehicule implements Serializable {
 	protected String nom ;
 	protected Marque marque ;
 	protected List<Option>option = new ArrayList <>();
+	private int voiture ;
 	
 	public Vehicule() {}
 	
@@ -45,6 +46,18 @@ public abstract class Vehicule implements Serializable {
 	public void setMoteur (Moteur m) {
 		moteur = m;
 	}
+	public void setPrix(double pPrix) {
+		this.prix = (float) pPrix;
+	}
+	public float getPrixTotal(){
+        Double t_prixTotal = 0.00d;
+        for (int i = 0 ; i < this.getOption().size(); i++){
+            t_prixTotal += this.getOption().get(i).getPrix();
+        }
+        this.setPrix((this.moteur.getPrix() + t_prixTotal));
+        return getPrix();
+    }
+	
 	public String toString() {
 		String str = " + Voiture " + getMarque()+" : " + getNom()+""+moteur.toString() +"("+getPrix()+"€) " + " [ ";
 		String listObject = "";
@@ -64,7 +77,7 @@ public abstract class Vehicule implements Serializable {
                 Total +=o.getPrix();
             }
         }
-        return str+listObject+"] d'une valeur totale de "+Total+"€ \n";
+        return str+listObject+"\n >>> d'une valeur totale de "+ " Prix total : " + (this.getPrixTotal()+Total)+"€ \n";
 			}
 		
 	}
