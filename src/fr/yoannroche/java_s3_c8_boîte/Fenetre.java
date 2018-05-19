@@ -1,4 +1,4 @@
-package fr.yoannroche.java_s3_c8_boite;
+package fr.yoannroche.java_s3_c8_boîte;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
